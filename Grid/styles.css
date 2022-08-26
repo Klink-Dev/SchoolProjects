@@ -1,0 +1,50 @@
+body {
+   display: grid;
+    height: 100%;
+   grid-template-columns: 150px auto 150px;
+   grid-template-rows: auto auto auto;
+   background: black;
+   font-size: 2em;
+   text-align: center;
+      grid-template-areas: 
+      "head head head"
+      "nav article aside"
+      "foot foot foot";
+}
+
+header {
+   background: cornflowerblue;
+   grid-area: head;
+}
+
+nav {
+   background: khaki;
+   grid-area: nav;
+}
+
+article {
+   background: rgba(28, 2, 2, 0.72);
+   grid-area: article;
+}
+
+aside {
+   background: goldenrod;
+   grid-area: aside;
+}
+
+footer {
+   background: lemonchiffon;
+   grid-area: foot;
+}
+.card {
+   color:fuchsia;
+    width: 300px;
+   background-color: #333;
+   border: solid 1px black;
+   padding: 10px;
+   margin-bottom: 10px;
+   box-shadow: 6px 3px 4px lime;
+   text-shadow: 0 0 3px violet;
+position: relative;
+    left: 25%
+}
